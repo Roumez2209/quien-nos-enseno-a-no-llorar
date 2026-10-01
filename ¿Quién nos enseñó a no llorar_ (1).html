@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>¿Quién nos enseñó a no llorar?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--r:#CD3D25;--c:#F7F2E8;--y:#EAA02F;--d:#171412}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font:500 16px 'DM Sans',sans-serif;background:var(--d);overflow-x:hidden}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;z-index:50;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+.sc{position:relative;height:var(--h,320vh);margin-top:-6vh;border-radius:50% 50% 0 0/6vh 6vh 0 0;background:var(--bg);color:var(--fg)}
+.sc:first-of-type{margin:0;border-radius:0}
+.red{--bg:var(--r);--fg:var(--c);--ac:var(--y)}.cream{--bg:var(--c);--fg:var(--d);--ac:var(--r)}.white{--bg:#fff;--fg:var(--d);--ac:var(--r)}
+.st{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2vh;padding:7vh 5vw;text-align:center}
+h1,h2,.big,.ph,.cnt{font-family:Anton,sans-serif;text-transform:uppercase;font-weight:400;line-height:.95}
+h1{font-size:clamp(44px,11vw,170px)}h2{font-size:clamp(40px,8vw,120px)}
+.hand{font-family:Caveat,cursive;font-size:clamp(22px,3.2vw,40px);color:var(--ac)}
+.tag{position:absolute;top:4vh;left:5vw;font:700 13px 'DM Sans';letter-spacing:.15em}
+.ly{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3vh;transition:opacity .6s;padding:6vh 5vw}
+.rel{position:relative;width:min(92vw,820px);height:62vh}
+svg{max-width:100%}.w,.ph{position:absolute;transform:translate(-50%,-50%);opacity:0;transition:opacity .6s,left .3s,top .3s}
+.w{font:700 clamp(15px,2.4vw,26px)'DM Sans';font-family:Caveat;font-size:clamp(26px,4.4vw,48px);color:var(--r)}.w.on{opacity:1}
+.rings{position:absolute;inset:0;margin:auto;width:min(80vh,90vw)}.rings circle{fill:none;stroke:var(--r);stroke-width:1.2;animation:pu 3s ease-in-out infinite;transform-origin:50px 50px}
+@keyframes pu{50%{transform:scale(1.12)}}
+.fin{position:absolute;opacity:0}
+.grid{display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(5px,1.1vw,12px);width:min(92vw,880px)}
+.d{width:clamp(14px,3.4vw,34px);aspect-ratio:1;border-radius:24%;border:2px dashed #F7F2E899;transition:.25s}.d.on{background:var(--c);border:2px solid var(--c);transform:scale(1.08)}
+.cnt{font-size:clamp(70px,16vw,230px)}.cnt small{font-size:.4em;opacity:.7}
+.ph{font-size:clamp(20px,4vw,44px);color:var(--r);white-space:nowrap}.ph.brick{background:var(--r);color:var(--c);padding:.1em .35em;border-radius:.2em}
+.ph:hover{color:var(--y)}
+.chain{position:relative;display:flex;justify-content:space-between;width:min(88vw,760px);border-top:4px dashed var(--r);margin-top:4vh}
+.n{width:clamp(22px,4vw,38px);aspect-ratio:1;border-radius:50%;background:var(--c);border:4px solid var(--r);margin-top:calc(clamp(22px,4vw,38px)/-2 - 2px);transition:.3s}.n.on{background:var(--r)}
+.pl{position:absolute;top:-70px;font:700 clamp(14px,2vw,20px) Caveat;font-size:26px;white-space:nowrap;transform:translateX(-50%);color:var(--r)}
+.row{display:flex;align-items:center;gap:10px;width:min(92vw,760px)}.row b{width:clamp(80px,17vw,150px);text-align:right;font-size:13px;letter-spacing:.06em}.row div{display:flex;flex-wrap:wrap;gap:4px;flex:1;text-align:left}
+.row i{width:clamp(9px,1.9vw,15px);aspect-ratio:1;border-radius:50%;border:2px solid var(--r);transition:.2s}.row i.on{background:var(--r)}
+.bub{display:flex;flex-wrap:wrap;gap:2vw;justify-content:center;align-items:center}
+.bb{border-radius:50%;background:var(--c);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:12px;font-weight:700;transition:transform .5s;cursor:default;text-align:center}.bb:hover{transform:scale(1.08)!important;background:var(--y)}.bb.nx{background:none;border:2px dashed var(--c);color:var(--c)}.bb em{font:normal 34px Anton}
+.fig{width:min(80vw,440px);height:auto}.fig *{stroke-width:5;stroke-linecap:round}
+.pills{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}.pills button{font:700 13px 'DM Sans';border:2px solid var(--r);border-radius:99px;background:none;padding:.5em 1em;color:var(--r)}.pills .on{background:var(--r);color:#fff}
+.er{display:flex;align-items:center;width:min(94vw,860px);gap:2vw;font:700 clamp(11px,2vw,18px) 'DM Sans'}
+.er>span{width:22%;text-align:right}.er .o{width:24%;text-align:left;font-family:Anton;font-size:clamp(18px,4vw,40px);opacity:0;transition:.4s}
+.tr{position:relative;flex:1;height:60px;border-top:3px dashed #F7F2E899;border-bottom:3px dashed #F7F2E899}.tr:after{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:14px;background:var(--c);transform:translateX(-50%)}
+.dt{position:absolute;top:50%;width:34px;height:34px;margin:-17px;border-radius:50%;background:var(--y);z-index:2;transition:border-radius .3s,width .3s,height .3s,background .3s}
+.dt.sil{height:4px;width:60px;border-radius:2px;margin-top:-2px}.dt.ira{border-radius:0;clip-path:polygon(50% 0,62% 36%,100% 30%,70% 56%,90% 100%,50% 74%,10% 100%,30% 56%,0 30%,38% 36%);width:50px;height:50px;margin:-25px;background:var(--c)}.dt.ais{width:14px;height:14px;margin:-7px;background:var(--c)}
+.col{position:relative;width:min(92vw,700px);height:76vh}.lg{position:absolute;left:50%;transform:translateX(-50%);text-align:center;transition:.4s;font:700 clamp(11px,2vw,15px) 'DM Sans'}.lg i{display:block;height:14px;background:var(--r);border-radius:6px;margin:0 auto 4px}.lg.press i{transform:scaleY(1.5);background:var(--d)}
+.drop{position:absolute;left:50%;width:30px;height:40px;margin-left:-15px;margin-top:-54px;background:var(--y);border-radius:50% 50% 50% 50%/65% 65% 35% 35%;transition:top .9s cubic-bezier(.5,0,.7,1)}
+.qc{position:absolute;width:min(88vw,620px);background:var(--c);color:var(--d);padding:clamp(20px,4vw,40px);border-radius:6px 40px 6px 40px;font-size:clamp(17px,2.7vw,26px);line-height:1.35;text-align:left;opacity:0;transform:translateY(60px) rotate(var(--rt));transition:.6s;max-height:80vh;overflow:auto}.qc.on{opacity:1;transform:rotate(var(--rt))}.qc.past{opacity:0;transform:translateY(-60px) rotate(var(--rt))}.qc small{display:block;margin-top:1em;font:700 12px 'DM Sans';color:var(--r);letter-spacing:.1em}.qc:hover{transform:rotate(0)}
+.q{opacity:0;position:absolute;transition:opacity .5s;padding:0 5vw}.q s{text-decoration-color:var(--r);text-decoration-thickness:.1em}
+.m{height:auto;padding:14vh 5vw 12vh;text-align:center;display:flex;flex-direction:column;align-items:center;gap:3vh}
+#bar{position:fixed;top:0;left:0;height:5px;background:var(--y);z-index:60;width:0}
+#nav{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:60;display:flex;flex-direction:column;gap:9px}
+#nav button{width:12px;height:12px;border-radius:50%;border:2px solid #fff;background:none;mix-blend-mode:difference;cursor:pointer;padding:0}#nav .on{background:#fff}
+@media(max-width:640px){#nav{display:none}.er>span{display:none}.er .o{width:34%}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+#tip{position:fixed;z-index:70;pointer-events:none;background:#171412;color:#F7F2E8;padding:.5em .8em;border-radius:8px;font:700 13px 'DM Sans';opacity:0;transition:opacity .15s;max-width:240px}[data-tip]{cursor:pointer}
+.lgd{display:flex;flex-direction:column;gap:8px;text-align:left;font-size:15px}.lgd b{font:28px Anton;margin-right:.4em}.lgd i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:8px}
+</style></head><body><div id="tip"></div>
+<div id="bar"></div><nav id="nav" aria-label="Capítulos"></nav>
+
+<section class="sc red" data-s="hero" data-t="Portada" style="--h:240vh"><div class="st" aria-label="¿Quién nos enseñó a no llorar? Los hombres no lloran.">
+<p class="hand" style="color:var(--y)">“Los hombres no lloran”</p>
+<h1>¿Quién nos enseñó<br>a <span id="nl" style="display:inline-block;background:var(--c);color:var(--r);padding:0 .12em">no llorar?</span></h1>
+<svg id="tearsv" width="90" height="120" viewBox="0 0 90 120"><path id="tear" pathLength="1" d="M45 6C30 40 10 58 14 82c3 20 18 30 31 30s28-10 31-30C80 58 60 40 45 6Z" fill="none" stroke="#EAA02F" stroke-width="5" stroke-dasharray="1" stroke-dashoffset="1" stroke-linecap="round"/></svg>
+<p class="hand" id="th" style="opacity:0;color:var(--c)">Los hombres no dejaron de llorar.<br>Aprendieron cuándo no hacerlo. ↓</p></div></section>
+
+<section class="sc cream" data-s="birth" data-t="01" style="--h:300vh"><div class="st" aria-label="Antes de aprender las reglas, sentimos. Sentir no es aprender. Es el punto de partida.">
+<span class="tag">01 · NACEMOS SINTIENDO</span>
+<svg class="rings" viewBox="0 0 100 100"><circle cx="50" cy="50" r="12"/><circle cx="50" cy="50" r="22" style="animation-delay:.5s"/><circle cx="50" cy="50" r="32" style="animation-delay:1s"/><circle cx="50" cy="50" r="43" style="animation-delay:1.5s"/></svg>
+<div class="rel ws" style="position:absolute;left:50%;top:10vh;transform:translateX(-50%);height:80vh"></div>
+<h2 class="fin">Sentir<br>no es<br>aprender.<br><span class="hand" style="font-size:.4em;text-transform:none">es el punto de partida</span></h2></div></section>
+
+<section class="sc red" data-s="big" data-t="02" style="--h:360vh"><div class="st" aria-label="70 de 87 personas, 80,5 %, estuvieron de acuerdo o muy de acuerdo con: a los niños varones se les enseña, desde pequeños, a no llorar.">
+<span class="tag">02 · LA CIFRA</span>
+<div class="cnt"><span id="cnt">0</span><small> / 87</small></div>
+<div class="grid"></div>
+<p class="hand" id="pc" style="opacity:0;color:var(--c)">80,5 % de acuerdo · 17 no <br>“A los niños varones se les enseña, desde pequeños, a no llorar”</p>
+<small>n = 87</small></div></section>
+
+<section class="sc cream" data-s="learn" data-t="03" style="--h:340vh"><div class="st" aria-label="Frases repetidas: no llores, sé fuerte, eso no duele, no seas llorón.">
+<span class="tag">03 · APRENDEMOS</span>
+<div class="rel ws"><svg viewBox="0 0 100 100" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%"><path id="wall" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" fill="none" stroke="#CD3D25" stroke-width="3" vector-effect="non-scaling-stroke" stroke-linejoin="round"/></svg>
+<svg viewBox="0 0 100 140" style="position:absolute;left:50%;top:50%;height:46%;transform:translate(-50%,-50%)"><circle cx="50" cy="35" r="20" fill="#171412"/><path d="M12 140c0-45 16-70 38-70s38 25 38 70z" fill="#171412"/></svg></div>
+<p class="hand">crianza + entorno + cultura</p></div></section>
+
+<section class="sc white" data-s="inh" data-t="04" style="--h:360vh"><div class="st" aria-label="48 respondieron no, 24 dijeron que se lo dijeron a ellas, 15 ambas. Mamá fue la mayor influencia emocional: 40 respuestas.">
+<span class="tag">04 · LA FRASE SE HEREDA</span>
+<div class="ly a"><p class="hand">“los hombres no lloran” →</p><div class="chain"><span class="pl">los hombres no lloran</span></div><div class="dn" style="display:flex;align-items:center;gap:4vw;margin-top:3vh;flex-wrap:wrap;justify-content:center"><svg viewBox="0 0 200 200" style="width:min(34vh,60vw)"></svg><div class="lgd"></div></div></div>
+<div class="ly b" style="opacity:0;background:var(--r);color:var(--c)"><p class="hand" style="color:var(--y)">¿quién influyó más en cómo manejas lo que sientes?</p><svg class="pk" viewBox="0 0 400 300" style="width:min(94vw,680px);height:auto"></svg></div></div></section>
+
+<section class="sc white" data-s="rea" data-t="05" style="--h:360vh"><div class="st" aria-label="Reacciones en la infancia: 24 hablaban, 11 abrazaban, 9 se burlaban, 5 ignoraban.">
+<span class="tag">05 · ¿QUÉ HACEMOS CON ESO?</span>
+<svg id="tm" viewBox="0 0 400 300" style="width:min(94vw,840px);height:auto"></svg><p class="hand" id="cap" style="min-height:1.3em"></p></div></section>
+
+<section class="sc red" data-s="emo" data-t="06" style="--h:300vh"><div class="st" aria-label="Una de las formas descritas en la investigación: tristeza puede volverse silencio, frustración ira, miedo aislamiento.">
+<span class="tag">06 · CUANDO LA EMOCIÓN NO SALE COMO LLANTO</span>
+<p class="hand" style="color:var(--c)">puede ocurrir…</p></div></section>
+
+<section class="sc cream" data-s="stop" data-t="07" style="--h:420vh"><div class="st" aria-label="Qué detiene el llanto: 23 costumbre de aguantar, 14 lugar público, 4 no tener a nadie, 2 miedo a parecer débil. 13 dijeron que nada los detiene.">
+<span class="tag">07 · LO QUE NOS DETIENE</span><div class="col"></div></div></section>
+
+<section class="sc red" data-s="voz" data-t="08" style="--h:420vh"><div class="st"><span class="tag">08 · LAS VOCES · respuestas reales de la encuesta</span><span class="hand" id="vc" style="position:absolute;bottom:5vh;color:var(--c)"></span></div></section>
+
+<section class="sc cream" data-s="fin" data-t="09" style="--h:420vh"><div class="st" aria-label="¿Los hombres no lloran? ¿O aprendimos a no hacerlo? ¿Qué aprendimos a hacer con lo que sentimos?">
+<h2 class="q" style="--n:0">07<br>volvamos<br>a la pregunta</h2>
+<h2 class="q">¿Los hombres<br><s>no</s> lloran?</h2>
+<h2 class="q" style="color:var(--r)">¿O aprendimos<br>a no hacerlo?</h2>
+<p class="hand q" style="font-size:clamp(28px,5vw,60px);color:var(--d)">¿Qué aprendimos a hacer<br>con lo que sentimos?</p></div></section>
+
+<section class="sc red m" data-s="met" data-t="Sobre"><h2 style="font-size:clamp(30px,6vw,70px)">Sobre esta encuesta</h2>
+<div class="cnt">87</div><div id="gd" class="grid" aria-label="49 masculino, 34 femenino, 4 no binario u otro"></div>
+<p class="hand" style="color:var(--c)">● masculino 49 &nbsp; ○ femenino 34 &nbsp; ◐ no binario/otro 4</p>
+<p style="max-width:34em;font-size:14px">Mayoría entre 18 y 25 años (76 de 87). Exploratoria: no es representativa de la población general. Temas: crianza, masculinidad, llanto, normas sociales, entorno familiar.</p></section>
+
+<script>
+const D={"heard": [48, 24, 15], "react": [["Hablábamos", 24], ["Abrazos", 11], ["Burlas", 9], ["Me ignoraban", 5]], "stop": [["Aguantar", 23], ["Estar en público", 14], ["No tener a nadie", 4], ["Miedo a parecer débil", 2]], "nada": 13, "infl": [["Mamá", 40, 0], ["Papá", 4, 0], ["Abuela", 3, 0], ["Otros (abuelo, hermano, profesoras…)", 6, 0], ["Sin respuesta", 34, 1]]},Q=["De una cultura en donde el hombre representa fuerza y llorar representa fragilidad", "De que siempre somos los fuertes y los que más aguantan las malas cosas sin importar que", "De practicas y creencias generacionales, donde llorar se percibe como un simbolo de debilidad, y es un concepto que pasa de generación en generación.", "Pienso que principalmente viene de la crianza diferenciada por género, y entre amigos/conocidos que crecieron de esa forma, se repiten esos comportamientos y se internalizan.", "No tengo idea de donde viene, pero al menos para mi, siempre vino de mi papa y para el llego de su manera de entender el mundo. Un mundo que siempre le hizo creer que el fuerte es aquel que no siente. Y yo siento mucho.", "De que muchas personas piensan que los hombres no pueden ser vulnerables", "De la imagen de fuerza que creen que deben mantener y la creencia de que llorar es sinónimo de debilidad.", "La epoca de antes, que se pensaba que llorar solamente era para las mujeres, y trataban de maricones a los hombres que eran expresivos.", "De los estereotipos de género en dónde los hombres deben cumplir un rol de protectores y proveedores en vez de ser personas que necesitan lo mismo ser protegidos y cuidados como todos", "Durante la crianza y fortalecer el caracter"];
+const $=(s,r=document)=>r.querySelector(s),cl=(v,a=0,b=1)=>Math.min(b,Math.max(a,v));
+const el=(t,c,h,p)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;if(p)p.append(e);return e};
+const S={},TP=(l,n,t=87)=>`<b>${l}</b><br>${n} de ${t} · ${(n/t*100).toFixed(1)} %`;
+S.hero=s=>{const nl=$('#nl'),t=$('#tear'),th=$('#th');return p=>{nl.style.transform=`translateX(${p*8}vw) rotate(${-p*3}deg)`;t.style.strokeDashoffset=1-cl(p*4);th.style.opacity=cl((p-.4)*4)}};
+S.birth=s=>{const W=['alegría','miedo','rabia','tristeza','asombro','ternura','risa','llanto'],box=$('.ws',s);
+ const ws=W.map((w,i)=>{const a=i/8*6.283+.4,k=26+i%2*12,e=el('span','w',w,box);e.style.left=50+Math.cos(a)*k*1.1+'%';e.style.top=50+Math.sin(a)*k*.9+'%';return e}),f=$('.fin',s),r=$('.rings',s);
+ return p=>{ws.forEach((e,i)=>e.classList.toggle('on',p>.04+i*.09&&p<.78));r.style.transform=`scale(${.6+p*.9})`;r.style.opacity=p>.78?.2:1;f.style.opacity=cl((p-.78)*6)}};
+S.big=s=>{const g=$('.grid',s),ds=[...Array(87)].map((_,i)=>{const e=el('i','d',null,g);e.dataset.tip=i<70?'De acuerdo (4 o 5)':'3 o menos';return e}),n=$('#cnt'),pc=$('#pc');
+ return p=>{const k=Math.round(cl(p/.7)*70);ds.forEach((d,i)=>d.classList.toggle('on',i<k));n.textContent=k;pc.style.opacity=cl((p-.74)*6)}};
+S.learn=s=>{const PH=['No llores','Sé fuerte','Eso no duele','No seas llorón','No llores','Sé fuerte','Eso no duele','No seas llorón'],box=$('.ws',s),N=8,
+ pos=PH.map((t,i)=>{const a=i/N*6.283-1.57;return[50+Math.cos(a)*40,50+Math.sin(a)*42]}),ns=PH.map(t=>el('span','ph',t,box)),w=$('#wall');
+ w.setAttribute('d','M'+pos.map(q=>q.join(' ')).join('L')+'Z');
+ return p=>{const sc=1-cl((p-.4)*2.2);ns.forEach((e,i)=>{e.style.left=pos[i][0]+Math.sin(i*5)*30*sc+'%';e.style.top=pos[i][1]+Math.cos(i*3)*30*sc+'%';e.style.opacity=cl((p-i*.06)*6);e.classList.toggle('brick',p>.85)});w.style.strokeDashoffset=1-cl((p-.5)*2.5)}};
+S.inh=s=>{const ch=$('.chain',s),pl=$('.pl',s),ns=[...Array(6)].map(()=>el('i','n',null,ch)),A=$('.a',s),B=$('.b',s),dn=$('.dn svg',s),lg=$('.lgd',s),pk=$('.pk',s),
+ C=['#CD3D25','#EAA02F','#171412'],L=['No','Sí, me lo dijeron a mí','Ambas'],len=2*Math.PI*70;let acc=0,dh='';
+ D.heard.forEach((n,i)=>{dh+=`<circle r="70" cx="100" cy="100" fill="none" stroke="${C[i]}" stroke-width="38" transform="rotate(-90 100 100)" data-tip="${TP(L[i],n)}" data-s="${acc}" data-f="${n/87*len}"/>`;acc+=n/87*len;lg.innerHTML+=`<div><i style="background:${C[i]}"></i><b>${n}</b>${L[i]}</div>`});
+ dn.innerHTML=dh+'<text x="100" y="112" text-anchor="middle" font-family="Anton" font-size="38">87</text>';const arcs=[...dn.querySelectorAll('circle')];
+ const P=[];[...D.infl].sort((a,b)=>b[1]-a[1]).forEach(([l,n,k])=>{const r=Math.sqrt(n/40)*64+2;let q=0,x=200,y=150;for(;q<6000;q++){const rr=q*.1;x=200+rr*Math.cos(q*.5)*1.3;y=150+rr*Math.sin(q*.5);if(x>r&&x<400-r&&y>r&&y<286-r&&P.every(p=>Math.hypot(p.x-x,p.y-y)>p.r+r+(Math.abs(p.y-y)<30?2:2)+(p.r<30||r<30?14:0)))break}P.push({x,y,r,l:l.split(' (')[0],n,k,t:l})});
+ pk.innerHTML=P.map(q=>`<g data-tip="${TP(q.t,q.n)}" style="transform-box:fill-box;transform-origin:center;transition:transform .6s"><circle cx="${q.x}" cy="${q.y}" r="${q.r}" fill="${q.k?'none':q.l==='Otros'?'#EAA02F':'#F7F2E8'}" stroke="#F7F2E8" stroke-width="2.5" stroke-dasharray="${q.k?'7 6':0}"/><text x="${q.x}" y="${q.y+(q.r>30?10:6)}" text-anchor="middle" font-family="Anton" font-size="${q.r>30?30:17}" fill="${q.k?'#F7F2E8':'#171412'}">${q.n}</text><text x="${q.x}" y="${q.y+q.r+13}" text-anchor="middle" font-size="11" font-weight="700" fill="#F7F2E8">${q.l}</text></g>`).join('');const gs=[...pk.children];
+ return p=>{const a=cl(p/.4);pl.style.left=a*100+'%';ns.forEach((n,i)=>n.classList.toggle('on',a>=i/5-.01));
+ const k=cl((p-.1)*3.5);arcs.forEach((c,i)=>{c.style.strokeDasharray=(+c.dataset.f*cl(k*3-i))+' '+len;c.style.strokeDashoffset=-c.dataset.s});
+ const sw=p>.5;A.style.opacity=sw?0:1;B.style.opacity=sw?1:0;B.style.pointerEvents=sw?'auto':'none';gs.forEach((g,i)=>g.style.transform=`scale(${sw?cl((p-.52-i*.04)*9):0})`)}};
+S.rea=s=>{const sv=$('#tm',s),cap=$('#cap',s),X=['Me preguntaba qué me pasaba y hablábamos','Me consolaba con abrazos o contacto físico','Se burlaba o me decía “eso no duele” / “no seas llorón”','Me ignoraba hasta que dejara de llorar','Otras respuestas individuales'],
+ V=[['Hablábamos',24],['Abrazos',11],['Burlas',9],['Me ignoraban',5],['Otras respuestas',38]],F=['#CD3D25','#EAA02F','#171412','#E8765F','none'],TC=['#F7F2E8','#171412','#F7F2E8','#171412','#171412'],o=[];
+ (function f(a,x,y,w,h){if(a.length==1)return o.push([a[0],x,y,w,h]);const q=a[0][1][1]/a.reduce((u,v)=>u+v[1][1],0);if(w>=h){o.push([a[0],x,y,w*q,h]);f(a.slice(1),x+w*q,y,w*(1-q),h)}else{o.push([a[0],x,y,w,h*q]);f(a.slice(1),x,y+h*q,w,h*(1-q))}})(V.map((v,i)=>[i,v]).sort((a,b)=>b[1][1]-a[1][1]),4,4,392,292);
+ sv.innerHTML=o.map(([[i,[l,n]],x,y,w,h])=>{const sm=h<80,fs=sm?26:42;return `<g data-i="${i}" data-tip="${TP(l,n)}" style="transform-box:fill-box;transform-origin:center;transition:opacity .5s,transform .5s;opacity:0"><rect x="${x}" y="${y}" width="${w-4}" height="${h-4}" rx="10" fill="${F[i]}" ${i==4?'stroke="#171412" stroke-width="2" stroke-dasharray="6 6"':''}/><text x="${x+12}" y="${y+(sm?30:46)}" font-family="Anton" font-size="${fs}" fill="${TC[i]}">${n}</text><text x="${x+12}" y="${y+(sm?46:66)}" font-size="13" font-weight="700" fill="${TC[i]}">${l}</text></g>`}).join('');
+ const gs=[...sv.children];
+ return p=>{const k=Math.max(0,Math.min(4,Math.floor(p*5.4-.2)));gs.forEach(g=>{const i=+g.dataset.i,v=cl(p*5.4-.2-i);g.style.opacity=v;g.style.transform=`scale(${.8+.2*v})`});cap.textContent=X[k]}};
+S.emo=s=>{const R=[['Tristeza','Silencio','sil'],['Frustración','Ira','ira'],['Miedo','Aislamiento','ais']],st=s.firstElementChild;
+ const rs=R.map(([a,b,k])=>{const r=el('div','er','<span>'+a+'</span><div class="tr"><i class="dt"></i></div><i class="o">'+b+'</i>',st);return[$('.dt',r),$('.o',r),k]});
+ return p=>rs.forEach(([d,o,k],i)=>{const q=cl((p-i*.12)/.5);d.style.left=q*100+'%';const x=q>.5;d.classList.toggle(k,x);o.style.opacity=x?1:0})};
+S.stop=s=>{const col=$('.col',s),T=[8,26,44,62],mx=Math.max(...D.stop.map(a=>a[1])),
+ ls=D.stop.map(([l,n],i)=>{const e=el('div','lg','<i></i>'+l+' · '+n,col);e.style.top=T[i]+8+'%';e.style.width=Math.max(12,n/mx*80)+'%';e.dataset.tip=TP(l,n);return e}),
+ dr=el('i','drop',null,col),nd=el('div','lg',`<span class="cnt" style="color:var(--r);font-size:clamp(44px,9vw,90px)">${D.nada}</span><br>Nada me detiene`,col);nd.style.cssText+='top:80%;opacity:0;width:60%';
+ return p=>{const k=Math.floor(p*5.2);dr.style.top=(k<4?T[k]:88)+'%';ls.forEach((e,i)=>{e.classList.toggle('press',i===k);e.style.opacity=k>=4?.25:1});nd.style.opacity=k>=4?1:0}};
+S.voz=s=>{const st=s.firstElementChild,cs=Q.map((q,i)=>{const c=el('blockquote','qc','“'+q.replace(/</g,'&lt;')+'”<small>— RESPUESTA ANÓNIMA · ENCUESTA</small>',st);c.style.setProperty('--rt',(i%2?1.5:-1.5)+'deg');return c}),vc=$('#vc');
+ return p=>{const k=Math.min(cs.length-1,Math.floor(p*cs.length));cs.forEach((c,i)=>{c.classList.toggle('on',i===k);c.classList.toggle('past',i<k)});vc.textContent=(k+1)+' / '+cs.length}};
+S.fin=s=>{const q=[...s.querySelectorAll('.q')],W=[[0,.2],[.2,.5],[.45,.75],[.75,1.1]];
+ return p=>q.forEach((e,i)=>{const[a,b]=W[i];e.style.opacity=cl(Math.min((p-a)*10+.3,(b-p)*10))})};
+S.met=s=>{const g=$('#gd');[[49,'#171412'],[34,'#F7F2E8'],[4,'#EAA02F']].forEach(([n,c])=>{for(let i=0;i<n;i++){const d=el('i','d on',null,g);d.style.background=c;d.style.borderColor='#F7F2E8'}})};
+
+const secs=[...document.querySelectorAll('.sc')],nav=$('#nav'),ups=[];
+secs.forEach((s,i)=>{ups.push(S[s.dataset.s](s));const b=el('button','',null,nav);b.title=s.dataset.t;b.setAttribute('aria-label',s.dataset.t);b.onclick=()=>s.scrollIntoView()});
+function tick(){const H=innerHeight;secs.forEach((s,i)=>{const r=s.getBoundingClientRect();if(s.dataset.s==='met')return;if(r.bottom<-50||r.top>H+50)return;ups[i](cl(-r.top/(r.height-H)))});
+ const mid=secs.findIndex(s=>s.getBoundingClientRect().bottom>H*.5);[...nav.children].forEach((b,i)=>b.classList.toggle('on',i===mid));
+ $('#bar').style.width=scrollY/(document.body.scrollHeight-H)*100+'%'}
+const tip=$('#tip');function tp(e){const x=e.target.closest&&e.target.closest('[data-tip]');if(!x){tip.style.opacity=0;return}tip.innerHTML=x.dataset.tip;tip.style.opacity=1;tip.style.left=Math.max(6,Math.min(innerWidth-250,e.clientX+14))+'px';tip.style.top=Math.max(8,e.clientY-50)+'px'}
+addEventListener('mousemove',tp);addEventListener('click',tp);addEventListener('scroll',()=>tip.style.opacity=0,{passive:true});
+let rq;addEventListener('scroll',()=>{cancelAnimationFrame(rq);rq=requestAnimationFrame(tick)},{passive:true});addEventListener('resize',tick);tick();
+</script></body></html>
